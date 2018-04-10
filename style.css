@@ -1,0 +1,55 @@
+#slideplayer
+{
+    text-align: center;
+    overflow: hidden
+}
+
+#slideplayer img
+{
+    max-width: 800px;
+    max-height: 600px;
+}
+
+.framein
+{
+    -webkit-animation-name: 'framein';
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: 'framein';
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.frameout
+{
+    -webkit-animation-name: 'frameout';
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: 'frameout';
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes framein
+{
+    from 
+    {
+        opacity: 0;
+    }           
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes frameout
+{
+    from 
+    {
+        opacity: 1;
+    }           
+    to 
+    {
+        opacity: 0;
+    }
+}
